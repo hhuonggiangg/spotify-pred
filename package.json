@@ -1,0 +1,20 @@
+{
+  "name": "spotify-predictor",
+  "version": "2.0.0",
+  "description": "Spotify Popularity Predictor - Streamlit App",
+  "scripts": {
+    "dev": "streamlit run app.py",
+    "start": "streamlit run app.py",
+    "build": "pip install -r requirements.txt"
+  },
+  "keywords": [
+    "spotify",
+    "machine-learning",
+    "streamlit",
+    "music-prediction"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

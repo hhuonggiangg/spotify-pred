@@ -1,0 +1,97 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+CHANGELOG.md
+*.md
+docs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+.venv
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Large model files (exclude)
+*.pkl
+*.pickle
+*.pckl
+model_*.pkl
+scaler.pkl
+model_info.pkl
+*.h5
+*.pth
+*.joblib
+
+# Cache
+.pytest_cache/
+.coverage
+.cache
+*.cache
+
+# Streamlit
+.streamlit/
+streamlit_config.yaml
+
+# Testing
+.tox/
+.hypothesis/
+.coverage
+
+# Vercel (if migrating)
+.vercel/
+vercel.json
+
+# Docker (not needed for Netlify)
+Dockerfile
+.dockerignore
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temp
+*.tmp
+*.bak
+
+# Local config
+config.local.py
+secrets.json
+local_config.py

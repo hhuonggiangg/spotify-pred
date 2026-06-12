@@ -1,0 +1,27 @@
+[build]
+  command = "pip install -r requirements.txt && streamlit run app.py --logger.level=error"
+  functions = "functions"
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  command = "streamlit run app.py"
+  port = 8501
+  functions = "functions"
+
+[[plugins]]
+  package = "@netlify/plugin-functions-core"
+
+[context.production]
+  command = "streamlit run app.py --logger.level=error"
+
+[context.production.environment]
+  STREAMLIT_SERVER_HEADLESS = "true"
+  STREAMLIT_SERVER_PORT = "8501"
+  STREAMLIT_SERVER_ADDRESS = "0.0.0.0"
+  STREAMLIT_SERVER_ENABLEXSRFPROTECTION = "false"
+  STREAMLIT_SERVER_ENABLECORS = "false"
